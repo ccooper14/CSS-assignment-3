@@ -7,7 +7,7 @@
 body {
     background: #b3dbe8;
     color: #000;
-    font-family: sans-serif; /*   add fonts here   */
+    font-family: 'Montserrat', 'Raleway', Calibri, sans-serif; /*   add fonts here   */
     font-size: 100%; /* DO NOT change */
     margin: 0; /* DO NOT change */
 }
@@ -48,7 +48,7 @@ aside {
 
 h1, h2 {
     margin: 0;
-    font-family: serif;  /*   add fonts here   */
+    font-family: 'Bree Serif', 'Crete Round', Cambria, serif;  /*   add fonts here   */
 }
 
 article h1 {
@@ -111,3 +111,16 @@ aside a:focus, aside a:hover {
 }
 
 /* media queries */
+
+@media (max-width: 480px) {
+  body { max-width: 480px;
+    margin: 0;
+  }
+  article {width: 480px;
+  margin: 0; }
+  aside { clear: both;
+  width: 480px; }
+  #container {border-width: 0; }
+  #top-image-container {text-indent: -9999px; }
+  img {display: none; }
+}
